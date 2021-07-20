@@ -1,0 +1,53 @@
+.tenants {
+  margin-top: 0;
+  .el-row {
+    // margin-bottom: 20px;
+  }
+  .main_container {
+    padding: 16px; 
+    h4.title {
+      font-size: 14px;
+      color: #555;
+      padding-bottom: 12px;
+      border-bottom: 1px solid #eee;
+      width: 100%;
+      margin-bottom: 16px; 
+      &::before {
+        content: "";
+        display: inline-block;
+        border-left: 3px solid #1A1A1A;
+        padding-left: 10px;
+        height: 16px;
+        display: inline-block;
+        line-height: 16px;
+        vertical-align: middle;
+        margin-top: -3px;
+      }
+    }
+  }
+  .footer {
+    text-align: center;
+    width: 100%;
+  }
+  .el-upload + .el-upload__tip {
+    margin: 0;
+    line-height: 12px;
+    color: #999; 
+  }
+}
+.el-input {
+  width: 240px;
+}
+.el-form--inline .el-form-item{
+  margin-bottom: 12px;
+  padding-right: 120px;
+}
+.el-upload-dragger {
+  width: 240px;
+  height: 90px;
+  .el-icon-upload {
+    font-size: 24px;
+    margin: 0;
+    line-height: 40px;
+  }
+} 

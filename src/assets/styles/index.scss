@@ -1,0 +1,36 @@
+// 初始化样式
+@import "./reset";
+// 公用样式
+@import "./common";
+// element-ui样式重置
+@import "reset.element.ui";
+// 常量
+@import "./constant/index";
+html,body,#app {
+  height: 100%;
+}
+
+.router_container {
+  float: left;
+  width: calc(100% - 200px);
+  padding: 16px;
+  margin-left:$sideWidth; 
+  transition: all 0.2s;
+  &.hide_sideMenu {
+    width: calc(100% - 56px);
+    margin-left: 56px;
+    .tab_wrap .el-radio-group {
+      width: calc(100% - 88px);
+      left: 74px;
+    }
+  }
+  &.container_w100 {
+    width: 100%;
+    margin-left: 0;
+  }
+} 
+
+.router_container,
+.side-menu {
+  margin-top: 64px;
+}

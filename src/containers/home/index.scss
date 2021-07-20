@@ -1,0 +1,128 @@
+/*
+ * @Author: xiexiaoying
+ * @Date: 2021-02-01 13:12
+ * @Email: 634021337@qq.com
+ * @Description:
+ * @Last Modified by: xiexiaoying
+ * @Last Modified time: 2021-02-01 13:12
+ */
+
+@import "~@/assets/styles/constant/index.scss";
+.project_index {
+  .lab_info {
+    background: rgba(193,221,251, 0.1);
+    margin-right: 24px;
+    padding: 12px 0px 12px 8px;
+    border-radius: 4px;
+  }
+  section {
+    height: 260px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 8px rgba(203, 219, 234, 0.3);
+    opacity: 1;
+    border-radius: 4px;
+    float: left;
+    padding: 16px 0px 12px 24px;
+    box-sizing: border-box;
+    margin-bottom: 24px;
+    cursor: pointer;
+    &.active {
+      background: rgba(193, 221, 251, 0.65);
+      box-shadow: 0px 4px 8px rgba(29, 132, 239, 0.35);
+      .lab_info {
+        background: rgba(193,221,251, 0.65);;
+      }
+    }
+    &.active h4{
+      color: $main_c1;
+    }
+
+    h4 {
+      font-size: 20px;
+      font-weight: 400;
+      color: $main_c3;
+      position: relative;
+
+      i.edit_icon {
+        float: right;
+        color: #818FB4;
+        padding-right: 0;
+        padding-left: 10px;
+        position: absolute;
+        right: 16px;
+        top: 0;
+        cursor: pointer;
+
+        &:hover {
+          color: $main_c1;
+        }
+
+        &:hover .operation {
+          display: inline-block;
+        }
+      }
+    }
+
+    .operation {
+      position: absolute;
+      right: -6px;
+      top: 18px;
+      line-height: 32px;
+      z-index: 1;
+      width: 104px;
+      height: 64px;
+      background: #FFFFFF;
+      border: 1px solid #1D84EF;
+      box-shadow: 0px 3px 6px rgba(129, 143, 180, 0.15);
+      border-radius: 4px;
+      text-align: center;
+      display: none;
+
+      &:before {
+        content: "";
+        position: absolute;
+        top: -13px;
+        right: 7px;
+        width: 0;
+        height: 0;
+        border-width: 6px 4px 6px;
+        border-style: solid;
+        border-color: transparent transparent #1D84EF transparent;
+      }
+
+      p:hover,
+      p.active {
+        background: #1D84EF;
+        color: #fff;
+      }
+    }
+
+    .desc {
+      margin: 16px 16px 16px 0px;
+      line-height: 22px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      display: -webkit-box;
+      -webkit-line-clamp: 3;
+      -webkit-box-orient: vertical;
+      height: 66px;
+    }
+
+    .el-row {
+      font-size: 16px;
+      & + .el-row {
+        margin-top: 16px;
+      }
+
+      label {
+        color: $main_c3;
+      }
+    }
+
+    .split_line {
+      height: 1px;
+      background-color: #F2F6F9;
+      margin: 8px 0px 16px;
+    }
+  }
+}

@@ -1,0 +1,41 @@
+
+ 
+.manage_list { 
+  .add_btn {
+    width: auto;
+    padding: 0 5px;
+  }
+  .top_query {
+    .el-input__inner {
+       width: 320px;
+    }  
+  } 
+}
+
+.top_query,
+.buttons {
+  i.iconfont {
+    padding-right: 6px;
+    font-size: 14px;
+  }
+} 
+
+
+ .dialog_access_type {
+   .el-form-item {
+     margin-bottom: 16px !important;
+   }
+   .el-dialog__body {
+    font-size: 12px;
+    color: #232323;
+   }
+  p { 
+    color: #808080;
+    text-align: justify;
+    line-height: 18px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+   }
+ }
+ 
+  
