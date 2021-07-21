@@ -50,10 +50,19 @@ module.exports = merge(common, {
               // 默认使用 webpackOptions.output中的publicPath
               publicPath: `/${config.projectName}/` 
             }
-          },
+          }, 
           'css-loader',
           'postcss-loader',
           'sass-loader',
+          { loader: 'sass-resources-loader',
+            options: {
+              sourceMap: true,
+              resources: [
+                utils.resolve('src/assets/styles/constant/variables.scss'),
+                utils.resolve('src/assets/styles/constant/mixin.scss')
+              ]
+            }
+          },
         ]
       },
     ]

@@ -72,7 +72,7 @@
       width: 104px;
       height: 64px;
       background: #FFFFFF;
-      border: 1px solid #1D84EF;
+      border: 1px solid $main_c1;
       box-shadow: 0px 3px 6px rgba(129, 143, 180, 0.15);
       border-radius: 4px;
       text-align: center;
@@ -87,12 +87,12 @@
         height: 0;
         border-width: 6px 4px 6px;
         border-style: solid;
-        border-color: transparent transparent #1D84EF transparent;
+        border-color: transparent transparent $main_c1 transparent;
       }
 
       p:hover,
       p.active {
-        background: #1D84EF;
+        background: $main_c1;
         color: #fff;
       }
     }

@@ -3,6 +3,7 @@ const merge = require('webpack-merge')
 const common = require('./webpack.common.js')
 const webpack = require('webpack')
 const config = require('./base.config')
+const utils = require('./utils')
 const HOST = process.env.HOST
 const PORT = process.env.PORT && Number(process.env.PORT)
 const HtmlWebpackPlugin = require('html-webpack-plugin')
@@ -54,8 +55,23 @@ module.exports = merge(common, {
     rules: [
       {
         test: /\.(css|scss)(\?.*)?$/,
-        loader: 'style-loader!css-loader!postcss-loader!sass-loader',
-      },
+        use: [
+          // { loader: 'vue-style-loader' },
+          { loader: 'style-loader'},
+          { loader: 'css-loader', options: { sourceMap: true } },
+          { loader: 'postcss-loader'},
+          { loader: 'sass-loader', options: { sourceMap: true } }, 
+          { loader: 'sass-resources-loader',
+            options: {
+              sourceMap: true,
+              resources: [
+                utils.resolve('src/assets/styles/constant/variables.scss'),
+                utils.resolve('src/assets/styles/constant/mixin.scss')
+              ]
+            }
+          }
+        ]
+      } 
     ]
   },
   plugins: [

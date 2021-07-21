@@ -12,7 +12,7 @@
     /*margin-bottom: 24px;*/
 
     .el-input__icon {
-      color: #1D84EF;
+      color: $main_c1;
       font-size: 16px;
     }
 
@@ -22,7 +22,7 @@
       height: 32px;
     }
     .is-current > div:first-child .el-tree-node__label{
-      color: #1D84EF;
+      color: $main_c1;
     }
     .el-tree {
       max-height: 300px;

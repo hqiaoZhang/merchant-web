@@ -53,6 +53,7 @@
     "ora": "^3.0.0",
     "postcss-loader": "^3.0.0",
     "sass-loader": "^7.1.0",
+    "sass-resources-loader": "^2.2.3",
     "style-loader": "^0.21.0",
     "uglifyjs-webpack-plugin": "^1.2.7",
     "url-loader": "^1.0.1",

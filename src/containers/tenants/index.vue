@@ -4,14 +4,14 @@
  * @Email: 991034150@qq.com 
  * @Description: 商家入驻
  * @Last Modified by: zhanghongqiao
- * @Last Modified time: 2021-07-20 15:36:12
+ * @Last Modified time: 2021-07-21 09:30:44
  */
 
 <template>
   <div class="router_container container_w100 tenants">
-     <el-breadcrumb separator-class="el-icon-arrow-right"> 
+     <!-- <el-breadcrumb separator-class="el-icon-arrow-right"> 
         <el-breadcrumb-item>商家入驻</el-breadcrumb-item>
-      </el-breadcrumb>
+      </el-breadcrumb> -->
       <div class="main_container white_bg"> 
          <el-form ref="ruleForm" :model="form" label-width="110px" inline :rules="rules">
          
@@ -139,7 +139,7 @@
             </el-form-item>
           </el-row>  
           <el-form-item class="footer">
-            <el-button type="primary" @click="submitForm('ruleForm')">立即注册</el-button>
+            <el-button type="primary" @click="submitForm('ruleForm')">立即入驻</el-button>
             <!-- <el-button>取消</el-button> -->
           </el-form-item>
         </el-form>
@@ -229,6 +229,7 @@ import './index.scss'
         this.dialogVisible = true;
       },
       submitForm(formName) {
+        this.$router.push('/payment')
           this.$refs[formName].validate((valid) => {
             if (valid) {
               alert('submit!');

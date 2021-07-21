@@ -4,7 +4,7 @@
  * @Email: 991034150@qq.com
  * @Description: 项目默认全局配置项
  * @Last Modified by: zhanghongqiao
- * @Last Modified time: 2021-07-20 13:56:49
+ * @Last Modified time: 2021-07-21 09:30:06
  */
 
 //  const search = global.location.search
@@ -29,5 +29,5 @@ export default {
   pageHeight: 1080,
   // 路由地址
   routerPath: '/merchant-web',
-  whiteList:  ['/login', '/tenants']
+  whiteList:  ['/login', '/tenants', '/payment']
 }

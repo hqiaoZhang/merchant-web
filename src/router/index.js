@@ -3,7 +3,7 @@
  * @Date: 2018-05-29 21:07:35
  * @Description: 路由配置
  * @Last Modified by: zhanghongqiao
- * @Last Modified time: 2021-07-20 12:34:45
+ * @Last Modified time: 2021-07-21 09:31:34
  */
 
 import Vue from 'vue'
@@ -29,7 +29,8 @@ const manage  = () => import('@/containers/manage/index.vue')
  
 // 商家入驻
 const tenants = () => import('@/containers/tenants/index.vue')
-
+// 付款
+const payment = () => import('@/containers/payment/index.vue')
 const routes = [
   {
     path: '*',
@@ -46,12 +47,16 @@ const routes = [
   },
   {
     path: `/manage`,
-    name: '调用方管理',
+    name: '店铺管理',
     component: manage
   },{
     path: `/tenants`,
     name: '商家入驻',
     component: tenants 
+  },{
+    path: `/payment`,
+    name: '订单支付',
+    component: payment  
   }
 ]
 

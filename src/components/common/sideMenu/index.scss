@@ -135,7 +135,7 @@
 // 选种状态
 .el-menu-item.is-active {
   i.iconfont{   
-    color: #1D84EF;
+    color: $main_c1;
   } 
 }
 .el-submenu__icon-arrow {
@@ -159,27 +159,27 @@
 .el-menu-item:hover,
 .el-submenu__title:hover,
 .el-menu-item.is-active {
-  border-left: 4px solid #1D84EF; 
-  color: #1D84EF;
+  border-left: 4px solid $main_c1; 
+  color: $main_c1;
   i.iconfont{   
-    color: #1D84EF;
+    color: $main_c1;
   }  
  
   a, i {
-    color: #498FFF;
+    color: $main_c1;
   }
 }
 .el-submenu.is-active{
   background: #ECEFF7;
   .el-submenu__title {
-    border-left: 4px solid #498FFF;
-    color: #498FFF;
+    border-left: 4px solid $main_c1;
+    color: $main_c1;
   }
   i{
-    color: #1D84EF;
+    color: $main_c1;
   }
   i.iconfont{   
-    color: #1D84EF;
+    color: $main_c1;
   }  
 }
 

@@ -76,9 +76,9 @@
     display: inline-block;
     text-decoration: none !important;
     transition: all 0.1s;
-    // border-bottom: 3px solid #1D84EF;
+    // border-bottom: 3px solid $main_c1;
     // &:hover {
-    //   color: #1D84EF;
+    //   color: $main_c1;
     // }
     &.active {
       position: relative;

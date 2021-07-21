@@ -11,7 +11,7 @@
 .tips_dialog {
   p {
     font-size: 18px;
-    color: #1D84EF;
+    color: $main_c1;
     text-align: center;
     margin-top: 34px;
   }

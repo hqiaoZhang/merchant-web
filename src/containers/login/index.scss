@@ -24,10 +24,10 @@
       width: 1rem;
       height: 0.03rem;
       vertical-align: middle;
-      background: linear-gradient(90deg, rgba(29, 132, 239, 0) 0%, #1D84EF 100%);
+      background: linear-gradient(90deg, rgba(29, 132, 239, 0) 0%, $main_c1 100%);
     }
     .line1{
-      background: linear-gradient(90deg, #1D84EF 0%,   rgba(29, 132, 239, 0) 100%);
+      background: linear-gradient(90deg, $main_c1 0%,   rgba(29, 132, 239, 0) 100%);
     }
   }
   h2 {
@@ -35,7 +35,7 @@
     font-family: Microsoft YaHei;
     font-weight: 300;
     line-height: 0.43rem;
-    color: #1D84EF;
+    color: $main_c1;
     letter-spacing: 0.08rem;
     display: inline-block;
     padding-left: 0.18rem;
@@ -84,7 +84,7 @@
   width: 100%;
   height: 0.52rem;
   background: #FFFFFF;
-  border: 1px solid #1D84EF;
+  border: 1px solid $main_c1;
   opacity: 1;
   border-radius: 4px;
   outline: none;
@@ -100,7 +100,7 @@
   outline: none;
   width: 4.83rem;
   height: 0.52rem;
-  background: #1D84EF;
+  background: $main_c1;
   box-shadow: 0px 3px 8px rgba(29, 131, 237, 0.25);
   border-radius: 4px;
   color: #ffffff;
